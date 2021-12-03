@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="./" method="">
+        <label for="">Nome:</label>
+        <input type="text" required id="name" name="user_first_name" placeholder="Nome Completo">
+
+        <label for="">Senha:</label>
+        <input type="password" required id="pass" name="user_passkey">
+
+        <label for="">Email:</label>
+        <input type="email" required id="email" name="user_email">
+
+        <label for="">Idade:</label>
+        <input type="number" required id="age" name="user_age">
+
+        <label for="">CPF:</label>
+        <input type="number" required id="cpf" name="user_cpf" placeholder="000.000.000-00">
+
+        <label for="">Data de Saída:</label>
+        <input type="date" required id="date" name="user_date_travel">
+
+        <div class='checkbox'>
+            <input type="checkbox" required id="check" name="user_check" value="Aceito">
+            <label for="check">Aceito os termos e condições de viagem.</label>
+        </div>
+
+        <div class='checkbox'>
+            <input type="checkbox" required id="check" name="user_check">
+            <label for="check">Desejo receber email com promoções e descontos.</label>
+        </div>
+
+
+        <div class="container">
+            <p>Como deseja receber sua passagem?</p>
+            <div class="radio">
+                <input type="radio" required id="get_in_local" name="recept_product">
+                <label for="get_in_local">Retirar passagem no local.</label>  
+            </div>
+            <div class="radio">
+                <input type="radio" required id="receive_in_home" name="recept_product">
+                <label for="receive_in_home">Receber no meu endereço.</label>  
+            </div>
+        </div>
+
+        <div class="select">
+            <label for="parcelas_compra">Parcelas:</label>
+            <select name="parcelas" id="parcelas_compra">
+                <option value="1x">1x de R$ 100,00</option>
+                <option value="2x">2x de R$ 50,00</option>
+                <option value="3x">3x de R$ 33,90</option>
+                <option value="4x">10x de R$ 10,00</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <p>Observações:</p>
+            <textarea name="message" id="message_buyer" cols="60" rows="10"></textarea>
+        </div>
+        
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

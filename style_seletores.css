@@ -1,0 +1,41 @@
+[required] {
+    border: 2px solid red;
+}
+
+[href="#site"]{
+    text-decoration: none;
+    color: red;
+}
+
+[href^="#"] {
+    background-color:greenyellow;
+}
+
+[href$=".com"] {
+    background-color: hotpink;
+}
+
+/* 
+ */
+
+ section > h2{
+    color: red;
+ }
+
+ p {
+     margin: 0px;
+     margin-bottom: 20px;
+ }
+
+ article {
+     background-color: greenyellow;
+     padding: 10px;
+ }
+
+ article p:last-child{
+     margin-bottom: 0px;
+ }
+
+p + p {
+    margin-top: 30px;
+}

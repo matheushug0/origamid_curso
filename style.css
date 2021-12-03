@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(#151515, #494949) no-repeat;
+    height: max-content;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;     
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 10px;
+
+    border: 3px solid purple;
+    border-radius: 0.2em;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    font-size: 1.3rem;
+    padding: 10px 30px;
+
+    background-color: white;
+    border: none;
+    border-radius: 0.3rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: ease-in-out 0.1s;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.radio {
+    margin: 20px 0;
+}
+
+.checkbox label, .checkbox input, .radio input, .radio label{
+    margin: 0px;
+    display: inline-block;
+}
+
+.checkbox input, .radio input{
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: block;
+    margin: 30px 0;
+
+    border: 1px solid purple;
+    width: max-content;
+
+    padding: 10px;
+    border-radius: 0.3em;
+}
+
+select {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+textarea {
+    font-size: 1.2rem;
+}
